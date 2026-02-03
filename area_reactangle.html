@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sp{
+            background-color: aquamarine;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Area Of rectangle</h1>
+    <label for="">Enter the Value L: </label>
+    <input type="number" name="" value="" id="L"><br><br>
+
+    <label for="">Enter the Value B: </label>
+    <input type="number" name="" value="" id="B"><br><br>
+
+    <button onclick="rectangle()">Calculate</button><br><br>
+    <span id="sp"></span>
+
+    <script>
+        function rectangle(){
+            var l = document.getElementById("L").value;
+            var b = document.getElementById("B").value;
+
+            var result = l * b;
+
+            var sp = document.getElementById("sp").innerHTML = `The are of rectangle is ${result}`
+        }
+    </script>
+</body>
+</html>
