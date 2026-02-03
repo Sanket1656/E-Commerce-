@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp" placeholder="calculate...." readonly><br><br>
+    <button onclick="put(1)">1</button>
+    <button onclick="put(2)">2</button>
+    <button onclick="put(3)">3</button><br><br>
+    <button onclick="put(4)">4</button>
+    <button onclick="put(5)">5</button>
+    <button onclick="put(6)">6</button><br><br>
+    <button onclick="put(7)">7</button>
+    <button onclick="put(8)">8</button>
+    <button onclick="put(9)">9</button><br><br>
+    <button onclick="put(0)">0</button>
+    <button onclick="put('.')">.</button>
+    <button onclick="eql()">=</button><br><br>
+    <button onclick="put('+')">+</button>
+    <button onclick="put('-')">-</button>
+    <button onclick="put('*')">*</button><br><br>
+    <button onclick="put('/')">/</button>
+    <button onclick="sqr()">squre</button>
+    <button onclick="sqrt()">sqrt</button>
+    <button onclick="clr()">Clear</button>
+    <button onclick="back()">Back</button>
+
+    <script>
+        var inp = document.getElementById("inp");
+
+        function put(a){
+            inp.value = inp.value + a;
+        }
+
+        function eql(){
+            inp.value = eval(inp.value);
+        }
+
+        function clr(){
+            inp.value = "";
+        }
+
+        function back(){
+            inp.value = inp.value.substr(0, inp.value.length - 1);
+        }
+
+        function sqr(){
+            inp.value = inp.value ** 2;z
+        }
+
+        function sqrt(){
+            inp.value = inp.value ** 0.5;
+        }
+
+        console.log("30"+"20");
+        console.log("30"+20);
+        console.log("30"-"20");
+        console.log("30"*"20");
+        console.log("30"*20);
+        console.log(true + true);
+        console.log(true + false);
+        console.log("true" + true);
+        console.log(true == 1);
+        console.log(false == 0);
+
+
+    </script>
+    
+</body>
+</html>
